@@ -75,49 +75,6 @@ CareSync/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.8 or higher
-- pip
-
-### Step 1 — Clone the repository
-```bash
-git clone https://github.com/shubhamrajsinha11/caresync.git
-cd caresync
-```
-
-### Step 2 — Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### Step 3 — Add datasets
-Place the following CSV files inside the `data/` folder:
-```
-data/
-├── Testing.csv
-├── Final_Augmented_dataset_Diseases_and_Symptoms.csv
-├── Symptom-severity.csv
-├── medical data.csv
-└── drugsComTest_raw.csv
-```
-
-### Step 4 — Train the model (run only once)
-```bash
-python train_models.py
-```
-This will train Random Forest, Logistic Regression, and Decision Tree classifiers, select the best one, and save the model to `models/`. This step only needs to be run once.
-
-### Step 5 — Launch the app
-```bash
-streamlit run app.py
-```
-
-Open **http://localhost:8501** in your browser.
-
----
-
 ## 📊 ML Model Details
 
 | Model | Configuration | Accuracy |
